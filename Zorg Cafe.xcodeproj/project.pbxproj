@@ -15,6 +15,19 @@
 		F51EC8CC1BC1AB7F00BD22A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51EC8CA1BC1AB7F00BD22A0 /* LaunchScreen.storyboard */; };
 		F51EC8D71BC1AB7F00BD22A0 /* Zorg_CafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8D61BC1AB7F00BD22A0 /* Zorg_CafeTests.swift */; };
 		F51EC8E21BC1AB7F00BD22A0 /* Zorg_CafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8E11BC1AB7F00BD22A0 /* Zorg_CafeUITests.swift */; };
+		F51EC8F01BC1AD8300BD22A0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8EF1BC1AD8300BD22A0 /* Person.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC8F21BC1B22100BD22A0 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8F11BC1B22100BD22A0 /* Group.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC8F41BC1B2B900BD22A0 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8F31BC1B2B900BD22A0 /* AppManager.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC8F61BC1B2ED00BD22A0 /* GroupApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8F51BC1B2ED00BD22A0 /* GroupApplication.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC8F81BC1B31B00BD22A0 /* PhotoDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8F71BC1B31B00BD22A0 /* PhotoDiary.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC8FA1BC1B34600BD22A0 /* DiaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8F91BC1B34600BD22A0 /* DiaryItem.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC8FC1BC1B36D00BD22A0 /* VisitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8FB1BC1B36D00BD22A0 /* VisitManager.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC8FE1BC1B3CD00BD22A0 /* AgendaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8FD1BC1B3CD00BD22A0 /* AgendaItem.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC9001BC1B5F100BD22A0 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8FF1BC1B5F100BD22A0 /* Visit.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC9021BC1B62000BD22A0 /* Unavailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC9011BC1B62000BD22A0 /* Unavailable.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC9041BC1B6E700BD22A0 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC9031BC1B6E700BD22A0 /* TaskManager.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC9061BC1B8C200BD22A0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC9051BC1B8C200BD22A0 /* Task.swift */; settings = {ASSET_TAGS = (); }; };
+		F51EC9081BC1B9BD00BD22A0 /* TaskRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC9071BC1B9BD00BD22A0 /* TaskRequest.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,19 @@
 		F51EC8DD1BC1AB7F00BD22A0 /* Zorg CafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zorg CafeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51EC8E11BC1AB7F00BD22A0 /* Zorg_CafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zorg_CafeUITests.swift; sourceTree = "<group>"; };
 		F51EC8E31BC1AB7F00BD22A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51EC8EF1BC1AD8300BD22A0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F51EC8F11BC1B22100BD22A0 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		F51EC8F31BC1B2B900BD22A0 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		F51EC8F51BC1B2ED00BD22A0 /* GroupApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupApplication.swift; sourceTree = "<group>"; };
+		F51EC8F71BC1B31B00BD22A0 /* PhotoDiary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDiary.swift; sourceTree = "<group>"; };
+		F51EC8F91BC1B34600BD22A0 /* DiaryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryItem.swift; sourceTree = "<group>"; };
+		F51EC8FB1BC1B36D00BD22A0 /* VisitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitManager.swift; sourceTree = "<group>"; };
+		F51EC8FD1BC1B3CD00BD22A0 /* AgendaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaItem.swift; sourceTree = "<group>"; };
+		F51EC8FF1BC1B5F100BD22A0 /* Visit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
+		F51EC9011BC1B62000BD22A0 /* Unavailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unavailable.swift; sourceTree = "<group>"; };
+		F51EC9031BC1B6E700BD22A0 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		F51EC9051BC1B8C200BD22A0 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F51EC9071BC1B9BD00BD22A0 /* TaskRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +132,19 @@
 				F51EC8CA1BC1AB7F00BD22A0 /* LaunchScreen.storyboard */,
 				F51EC8CD1BC1AB7F00BD22A0 /* Info.plist */,
 				F51EC8C51BC1AB7F00BD22A0 /* Zorg_Cafe.xcdatamodeld */,
+				F51EC8EF1BC1AD8300BD22A0 /* Person.swift */,
+				F51EC8F11BC1B22100BD22A0 /* Group.swift */,
+				F51EC8F31BC1B2B900BD22A0 /* AppManager.swift */,
+				F51EC8F51BC1B2ED00BD22A0 /* GroupApplication.swift */,
+				F51EC8F71BC1B31B00BD22A0 /* PhotoDiary.swift */,
+				F51EC8F91BC1B34600BD22A0 /* DiaryItem.swift */,
+				F51EC8FB1BC1B36D00BD22A0 /* VisitManager.swift */,
+				F51EC8FD1BC1B3CD00BD22A0 /* AgendaItem.swift */,
+				F51EC8FF1BC1B5F100BD22A0 /* Visit.swift */,
+				F51EC9011BC1B62000BD22A0 /* Unavailable.swift */,
+				F51EC9031BC1B6E700BD22A0 /* TaskManager.swift */,
+				F51EC9051BC1B8C200BD22A0 /* Task.swift */,
+				F51EC9071BC1B9BD00BD22A0 /* TaskRequest.swift */,
 			);
 			path = "Zorg Cafe";
 			sourceTree = "<group>";
@@ -258,9 +297,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51EC9021BC1B62000BD22A0 /* Unavailable.swift in Sources */,
 				F51EC8C11BC1AB7F00BD22A0 /* ViewController.swift in Sources */,
+				F51EC8FA1BC1B34600BD22A0 /* DiaryItem.swift in Sources */,
 				F51EC8C71BC1AB7F00BD22A0 /* Zorg_Cafe.xcdatamodeld in Sources */,
+				F51EC8F01BC1AD8300BD22A0 /* Person.swift in Sources */,
+				F51EC8F41BC1B2B900BD22A0 /* AppManager.swift in Sources */,
+				F51EC9001BC1B5F100BD22A0 /* Visit.swift in Sources */,
+				F51EC9061BC1B8C200BD22A0 /* Task.swift in Sources */,
+				F51EC9081BC1B9BD00BD22A0 /* TaskRequest.swift in Sources */,
+				F51EC8F21BC1B22100BD22A0 /* Group.swift in Sources */,
+				F51EC8F61BC1B2ED00BD22A0 /* GroupApplication.swift in Sources */,
+				F51EC8FE1BC1B3CD00BD22A0 /* AgendaItem.swift in Sources */,
+				F51EC8F81BC1B31B00BD22A0 /* PhotoDiary.swift in Sources */,
 				F51EC8BF1BC1AB7F00BD22A0 /* AppDelegate.swift in Sources */,
+				F51EC9041BC1B6E700BD22A0 /* TaskManager.swift in Sources */,
+				F51EC8FC1BC1B36D00BD22A0 /* VisitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Zorg Cafe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepanda.Zorg-Cafe";
@@ -411,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Zorg Cafe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepanda.Zorg-Cafe";
