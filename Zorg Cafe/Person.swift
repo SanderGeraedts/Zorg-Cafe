@@ -16,6 +16,15 @@ class Person{
     //var avatar : image
     var caregiver : Bool
     var phoneNumber : String
+    var groups : [Group]?
     
-    
+    //constructor
+    init(personId : Int, name: String, caregiver : Bool, phoneNumber : String, groups : [Group]?)
+    {
+        self.personId = personId
+        self.name = name
+        self.caregiver = caregiver
+        self.phoneNumber = phoneNumber
+        self.groups = groups
+    }
 }
