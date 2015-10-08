@@ -11,7 +11,7 @@ import Foundation
 class Person{
     
     //properties
-    var personId : Int
+    var id : Int
     var name : String
     //var avatar : image
     var caregiver : Bool
@@ -19,9 +19,9 @@ class Person{
     var groups : [Group]?
     
     //constructor
-    init(personId : Int, name: String, caregiver : Bool, phoneNumber : String, groups : [Group]?)
+    init(id : Int, name: String, caregiver : Bool, phoneNumber : String, groups : [Group]?)
     {
-        self.personId = personId
+        self.id = id
         self.name = name
         self.caregiver = caregiver
         self.phoneNumber = phoneNumber

@@ -454,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Zorg Cafe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepanda.Zorg-Cafe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -466,6 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Zorg Cafe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepanda.Zorg-Cafe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,6 +541,7 @@
 				F51EC8E81BC1AB7F00BD22A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F51EC8E91BC1AB7F00BD22A0 /* Build configuration list for PBXNativeTarget "Zorg CafeTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +550,7 @@
 				F51EC8EB1BC1AB7F00BD22A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F51EC8EC1BC1AB7F00BD22A0 /* Build configuration list for PBXNativeTarget "Zorg CafeUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +559,7 @@
 				F51EC8EE1BC1AB7F00BD22A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
