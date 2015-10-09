@@ -10,4 +10,18 @@ import Foundation
 
 class AgendaItem{
     
+    //properties
+    var startTime : DateTime
+    var endTime : DateTime
+    
+    //constructor
+    init(startTime : DateTime, endTime : DateTime){
+        self.startTime = startTime
+        self.endTime = endTime
+    }
+
+    //methods
+    func Cancel(person : Person){
+        //todo todo todotodotodotodotodooooooooooooo todo
+    }
 }

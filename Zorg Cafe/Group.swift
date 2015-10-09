@@ -17,9 +17,10 @@ class Group{
     var patient : Person
     var caregivers : [Person]
     
-    var photoDiary : PhotoDiary
-    var visitManager : VisitManager
-    var taskManager : TaskManager
+    //todo remove ?'s
+    var photoDiary : PhotoDiary?
+    var visitManager : VisitManager?
+    var taskManager : TaskManager?
     
     //constructor
     init(id : Int, avatarUrl : String, admin : Person, patient : Person)
@@ -31,8 +32,8 @@ class Group{
         self.patient = patient
         self.caregivers = [Person]()
         
-        self.photoDiary = PhotoDiary()
-        self.visitManager = VisitManager()
-        self.taskManager = TaskManager()
+        //self.photoDiary = PhotoDiary()
+        //self.visitManager = VisitManager()
+        //self.taskManager = TaskManager()
     }
 }

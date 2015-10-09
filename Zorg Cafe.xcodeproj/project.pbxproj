@@ -28,6 +28,7 @@
 		F51EC9041BC1B6E700BD22A0 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC9031BC1B6E700BD22A0 /* TaskManager.swift */; settings = {ASSET_TAGS = (); }; };
 		F51EC9061BC1B8C200BD22A0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC9051BC1B8C200BD22A0 /* Task.swift */; settings = {ASSET_TAGS = (); }; };
 		F51EC9081BC1B9BD00BD22A0 /* TaskRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC9071BC1B9BD00BD22A0 /* TaskRequest.swift */; settings = {ASSET_TAGS = (); }; };
+		F57BA2161BC7A19E0083DCB0 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BA2151BC7A19E0083DCB0 /* DateTime.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		F51EC9031BC1B6E700BD22A0 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		F51EC9051BC1B8C200BD22A0 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F51EC9071BC1B9BD00BD22A0 /* TaskRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRequest.swift; sourceTree = "<group>"; };
+		F57BA2151BC7A19E0083DCB0 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				F51EC9031BC1B6E700BD22A0 /* TaskManager.swift */,
 				F51EC9051BC1B8C200BD22A0 /* Task.swift */,
 				F51EC9071BC1B9BD00BD22A0 /* TaskRequest.swift */,
+				F57BA2151BC7A19E0083DCB0 /* DateTime.swift */,
 			);
 			path = "Zorg Cafe";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				F51EC9061BC1B8C200BD22A0 /* Task.swift in Sources */,
 				F51EC9081BC1B9BD00BD22A0 /* TaskRequest.swift in Sources */,
 				F51EC8F21BC1B22100BD22A0 /* Group.swift in Sources */,
+				F57BA2161BC7A19E0083DCB0 /* DateTime.swift in Sources */,
 				F51EC8F61BC1B2ED00BD22A0 /* GroupApplication.swift in Sources */,
 				F51EC8FE1BC1B3CD00BD22A0 /* AgendaItem.swift in Sources */,
 				F51EC8F81BC1B31B00BD22A0 /* PhotoDiary.swift in Sources */,

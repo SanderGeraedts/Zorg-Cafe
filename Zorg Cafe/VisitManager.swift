@@ -10,4 +10,11 @@ import Foundation
 
 class VisitManager{
     
+    //properties
+    var items : [AgendaItem]
+    
+    //constructor
+    init(){
+        items = [AgendaItem]()
+    }
 }

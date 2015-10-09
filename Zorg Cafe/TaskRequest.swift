@@ -10,4 +10,13 @@ import Foundation
 
 class TaskRequest{
     
+    //properties
+    var accepted : Bool?
+    var task : Task
+    
+    //constructor
+    init(accepted : Bool?, task : Task){
+        self.accepted = accepted
+        self.task = task
+    }
 }
