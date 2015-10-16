@@ -17,4 +17,17 @@ class VisitManager{
     init(){
         items = [AgendaItem]()
     }
+    
+    //Methodes
+    func addVisit(visit: Visit)
+    {
+        
+    }
+    
+    func AddUnavailable(unavailable: Unavailable)
+    {
+        
+    }
+    
+    
 }

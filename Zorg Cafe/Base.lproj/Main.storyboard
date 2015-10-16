@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P0t-oy-WBW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bezoek-->
+        <scene sceneID="M29-CB-cna">
+            <objects>
+                <viewController id="kZS-Ik-A6R" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MmP-nT-TqF"/>
+                        <viewControllerLayoutGuide type="bottom" id="rHm-cR-Isz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VM7-T2-CR3">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zdh-7Z-3Sb">
+                                <rect key="frame" x="20" y="20" width="128" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DAH-Ke-PQh" appends="YES" id="5Xe-rC-Zun"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cancelbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="d4D-bO-44a">
+                                <rect key="frame" x="256" y="20" width="128" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="00T-dF-emo" appends="YES" id="TYI-D0-39V"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="burgermenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="YSg-M3-Ufk">
+                                <rect key="frame" x="492" y="20" width="128" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F0X-in-SVa" appends="YES" id="kbn-9C-nYG"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bezoek" id="egQ-E5-S02"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="640" height="960"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgh-9r-Kno" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="F0X-in-SVa"/>
+                <tapGestureRecognizer id="00T-dF-emo"/>
+                <tapGestureRecognizer id="DAH-Ke-PQh"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="1322"/>
+        </scene>
+        <!--Verzoeken-->
+        <scene sceneID="vnZ-n3-yR5">
+            <objects>
+                <viewController id="PDj-Db-Pby" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pcq-cU-Mok"/>
+                        <viewControllerLayoutGuide type="bottom" id="wg1-v7-W5L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gSD-IO-fCb">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="burgermenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="yrG-iS-eTT">
+                                <rect key="frame" x="492" y="28" width="128" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7VQ-XW-7Io" appends="YES" id="K1k-B0-sR4"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filtericon.png" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-yq-2Ui">
+                                <rect key="frame" x="269" y="40" width="103" height="103"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YV3-Ni-d5x" appends="YES" id="qM9-Db-iIW"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plusicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="BZc-bR-eb1">
+                                <rect key="frame" x="20" y="28" width="128" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3dG-pl-5yb" appends="YES" id="MA7-m5-p9U"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Verzoeken" id="caW-bN-BPp"/>
+                    <navigationItem key="navigationItem" id="9Xm-dJ-PtW"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="640" height="960"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUb-Rk-j1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7VQ-XW-7Io"/>
+                <tapGestureRecognizer id="YV3-Ni-d5x"/>
+                <tapGestureRecognizer id="3dG-pl-5yb"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="2402"/>
+        </scene>
+        <!--Fotodagboek-->
+        <scene sceneID="xpr-s8-cwz">
+            <objects>
+                <viewController id="PAo-Wo-fry" customClass="viewPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GlC-sg-VqT"/>
+                        <viewControllerLayoutGuide type="bottom" id="jRz-fP-KCa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hck-sw-N6F">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="burgermenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="q30-Ef-76J">
+                                <rect key="frame" x="513" y="46" width="44" height="44"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="DdA-NP-bJ8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DdA-NP-bJ8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DdA-NP-bJ8"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Rms-bt-fIv" appends="YES" id="kEQ-Vw-u25"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q30-Ef-76J" firstAttribute="trailing" secondItem="Hck-sw-N6F" secondAttribute="trailingMargin" id="XBR-aD-qTW"/>
+                            <constraint firstItem="q30-Ef-76J" firstAttribute="top" secondItem="GlC-sg-VqT" secondAttribute="bottom" constant="8" symbolic="YES" id="dxh-s6-Wbr"/>
+                            <constraint firstItem="jRz-fP-KCa" firstAttribute="top" secondItem="q30-Ef-76J" secondAttribute="bottom" constant="839" id="yvL-Cv-QCz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XBR-aD-qTW"/>
+                                <exclude reference="dxh-s6-Wbr"/>
+                                <exclude reference="yvL-Cv-QCz"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="XBR-aD-qTW"/>
+                                <include reference="dxh-s6-Wbr"/>
+                                <include reference="yvL-Cv-QCz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fotodagboek" id="Rxt-zR-tB7"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="640" height="960"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0e-Ai-AiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Rms-bt-fIv"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="285"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="E9i-Rd-ZpP">
+            <objects>
+                <tabBarController id="P0t-oy-WBW" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="640" height="960"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ff8-TR-M9z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PAo-Wo-fry" kind="relationship" relationship="viewControllers" id="otS-hl-YoL"/>
+                        <segue destination="kZS-Ik-A6R" kind="relationship" relationship="viewControllers" id="5aG-vZ-O7K"/>
+                        <segue destination="PDj-Db-Pby" kind="relationship" relationship="viewControllers" id="q27-H9-dLI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D0X-xH-68U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-366" y="635"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="burgermenu.png" width="512" height="512"/>
+        <image name="calendar.png" width="128" height="128"/>
+        <image name="cancelbutton.png" width="512" height="512"/>
+        <image name="filtericon.png" width="128" height="128"/>
+        <image name="plusicon.png" width="512" height="512"/>
+    </resources>
+</document>

@@ -36,4 +36,16 @@ class Group{
         //self.visitManager = VisitManager()
         //self.taskManager = TaskManager()
     }
+    
+    //Methodes
+    func JoinGroup(person: Person)
+    {
+        
+    }
+    
+    func LeaveGroup(person: Person)
+    {
+        
+    }
+    
 }

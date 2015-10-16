@@ -26,4 +26,15 @@ class Task{
         self.finished = finished
         self.requests = requests
     }
+    
+    //Methodes
+    func AssignTo(person : Person)
+    {
+        
+    }
+    
+    func AssignTo(person: [Person])
+    {
+        
+    }
 }
