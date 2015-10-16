@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F51EC8BF1BC1AB7F00BD22A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8BE1BC1AB7F00BD22A0 /* AppDelegate.swift */; };
 		F51EC8C11BC1AB7F00BD22A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8C01BC1AB7F00BD22A0 /* ViewController.swift */; };
-		F51EC8C41BC1AB7F00BD22A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51EC8C21BC1AB7F00BD22A0 /* Main.storyboard */; };
 		F51EC8C71BC1AB7F00BD22A0 /* Zorg_Cafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F51EC8C51BC1AB7F00BD22A0 /* Zorg_Cafe.xcdatamodeld */; };
 		F51EC8C91BC1AB7F00BD22A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51EC8C81BC1AB7F00BD22A0 /* Assets.xcassets */; };
 		F51EC8CC1BC1AB7F00BD22A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51EC8CA1BC1AB7F00BD22A0 /* LaunchScreen.storyboard */; };
@@ -32,6 +31,11 @@
 		F5BBECDB1BD0ECBD00551B67 /* viewVisits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECDA1BD0ECBD00551B67 /* viewVisits.swift */; settings = {ASSET_TAGS = (); }; };
 		F5BBECDD1BD0ECED00551B67 /* viewTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECDC1BD0ECED00551B67 /* viewTasks.swift */; settings = {ASSET_TAGS = (); }; };
 		F5BBECDF1BD0F37400551B67 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECDE1BD0F37400551B67 /* LocalData.swift */; settings = {ASSET_TAGS = (); }; };
+		F5BBECE11BD0F89500551B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BBECE01BD0F89500551B67 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F5BBECE71BD0FF6200551B67 /* collPhotoDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECE61BD0FF6200551B67 /* collPhotoDiary.swift */; settings = {ASSET_TAGS = (); }; };
+		F5BBECE91BD0FF9A00551B67 /* cellPhotoDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECE81BD0FF9A00551B67 /* cellPhotoDiary.swift */; settings = {ASSET_TAGS = (); }; };
+		F5BBECEB1BD0FFC400551B67 /* collPhotoDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECEA1BD0FFC400551B67 /* collPhotoDay.swift */; settings = {ASSET_TAGS = (); }; };
+		F5BBECED1BD0FFE500551B67 /* cellPhotoDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECEC1BD0FFE500551B67 /* cellPhotoDay.swift */; settings = {ASSET_TAGS = (); }; };
 		F5E9E4CB1BCA86D40041CC25 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4CA1BCA86D40041CC25 /* calendar.png */; settings = {ASSET_TAGS = (); }; };
 		F5E9E4CD1BCA87410041CC25 /* cancelbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4CC1BCA87410041CC25 /* cancelbutton.png */; settings = {ASSET_TAGS = (); }; };
 		F5E9E4CF1BCA877D0041CC25 /* burgermenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4CE1BCA877D0041CC25 /* burgermenu.png */; settings = {ASSET_TAGS = (); }; };
@@ -61,7 +65,6 @@
 		F51EC8BB1BC1AB7F00BD22A0 /* Zorg Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zorg Cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51EC8BE1BC1AB7F00BD22A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51EC8C01BC1AB7F00BD22A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F51EC8C31BC1AB7F00BD22A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F51EC8C61BC1AB7F00BD22A0 /* Zorg_Cafe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zorg_Cafe.xcdatamodel; sourceTree = "<group>"; };
 		F51EC8C81BC1AB7F00BD22A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F51EC8CB1BC1AB7F00BD22A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +92,11 @@
 		F5BBECDA1BD0ECBD00551B67 /* viewVisits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewVisits.swift; sourceTree = "<group>"; };
 		F5BBECDC1BD0ECED00551B67 /* viewTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewTasks.swift; sourceTree = "<group>"; };
 		F5BBECDE1BD0F37400551B67 /* LocalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		F5BBECE01BD0F89500551B67 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		F5BBECE61BD0FF6200551B67 /* collPhotoDiary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collPhotoDiary.swift; sourceTree = "<group>"; };
+		F5BBECE81BD0FF9A00551B67 /* cellPhotoDiary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellPhotoDiary.swift; sourceTree = "<group>"; };
+		F5BBECEA1BD0FFC400551B67 /* collPhotoDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collPhotoDay.swift; sourceTree = "<group>"; };
+		F5BBECEC1BD0FFE500551B67 /* cellPhotoDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellPhotoDay.swift; sourceTree = "<group>"; };
 		F5E9E4CA1BCA86D40041CC25 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		F5E9E4CC1BCA87410041CC25 /* cancelbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancelbutton.png; sourceTree = "<group>"; };
 		F5E9E4CE1BCA877D0041CC25 /* burgermenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgermenu.png; sourceTree = "<group>"; };
@@ -151,9 +159,9 @@
 				F5BBECD31BD0D78B00551B67 /* Logic */,
 				F51EC8BE1BC1AB7F00BD22A0 /* AppDelegate.swift */,
 				F51EC8C01BC1AB7F00BD22A0 /* ViewController.swift */,
-				F51EC8C21BC1AB7F00BD22A0 /* Main.storyboard */,
 				F51EC8C81BC1AB7F00BD22A0 /* Assets.xcassets */,
 				F51EC8CA1BC1AB7F00BD22A0 /* LaunchScreen.storyboard */,
+				F5BBECE01BD0F89500551B67 /* Main.storyboard */,
 				F51EC8CD1BC1AB7F00BD22A0 /* Info.plist */,
 				F51EC8C51BC1AB7F00BD22A0 /* Zorg_Cafe.xcdatamodeld */,
 				F51EC8F31BC1B2B900BD22A0 /* AppManager.swift */,
@@ -194,9 +202,9 @@
 		F5BBECD41BD0D79400551B67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F5E9E4D41BCA8B090041CC25 /* viewPhotoDiary.swift */,
-				F5BBECDA1BD0ECBD00551B67 /* viewVisits.swift */,
-				F5BBECDC1BD0ECED00551B67 /* viewTasks.swift */,
+				F5BBECE21BD0FA6D00551B67 /* PhotoDiary */,
+				F5BBECE51BD0FA9C00551B67 /* Tasks */,
+				F5BBECE31BD0FA7900551B67 /* Visits */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -245,6 +253,34 @@
 				F51EC9051BC1B8C200BD22A0 /* Task.swift */,
 				F51EC9031BC1B6E700BD22A0 /* TaskManager.swift */,
 				F51EC9071BC1B9BD00BD22A0 /* TaskRequest.swift */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		F5BBECE21BD0FA6D00551B67 /* PhotoDiary */ = {
+			isa = PBXGroup;
+			children = (
+				F5E9E4D41BCA8B090041CC25 /* viewPhotoDiary.swift */,
+				F5BBECE61BD0FF6200551B67 /* collPhotoDiary.swift */,
+				F5BBECE81BD0FF9A00551B67 /* cellPhotoDiary.swift */,
+				F5BBECEA1BD0FFC400551B67 /* collPhotoDay.swift */,
+				F5BBECEC1BD0FFE500551B67 /* cellPhotoDay.swift */,
+			);
+			name = PhotoDiary;
+			sourceTree = "<group>";
+		};
+		F5BBECE31BD0FA7900551B67 /* Visits */ = {
+			isa = PBXGroup;
+			children = (
+				F5BBECDA1BD0ECBD00551B67 /* viewVisits.swift */,
+			);
+			name = Visits;
+			sourceTree = "<group>";
+		};
+		F5BBECE51BD0FA9C00551B67 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				F5BBECDC1BD0ECED00551B67 /* viewTasks.swift */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -367,11 +403,11 @@
 				F51EC8CC1BC1AB7F00BD22A0 /* LaunchScreen.storyboard in Resources */,
 				F5E9E4CF1BCA877D0041CC25 /* burgermenu.png in Resources */,
 				F5E9E4CD1BCA87410041CC25 /* cancelbutton.png in Resources */,
+				F5BBECE11BD0F89500551B67 /* Main.storyboard in Resources */,
 				F5E9E4D11BCA88300041CC25 /* filtericon.png in Resources */,
 				F5E9E4D31BCA88710041CC25 /* plusicon.png in Resources */,
 				F5E9E4CB1BCA86D40041CC25 /* calendar.png in Resources */,
 				F51EC8C91BC1AB7F00BD22A0 /* Assets.xcassets in Resources */,
-				F51EC8C41BC1AB7F00BD22A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,11 +437,15 @@
 				F51EC8C11BC1AB7F00BD22A0 /* ViewController.swift in Sources */,
 				F51EC8FA1BC1B34600BD22A0 /* DiaryItem.swift in Sources */,
 				F51EC8C71BC1AB7F00BD22A0 /* Zorg_Cafe.xcdatamodeld in Sources */,
+				F5BBECE91BD0FF9A00551B67 /* cellPhotoDiary.swift in Sources */,
 				F51EC8F01BC1AD8300BD22A0 /* Person.swift in Sources */,
+				F5BBECEB1BD0FFC400551B67 /* collPhotoDay.swift in Sources */,
 				F5BBECDF1BD0F37400551B67 /* LocalData.swift in Sources */,
+				F5BBECED1BD0FFE500551B67 /* cellPhotoDay.swift in Sources */,
 				F51EC8F41BC1B2B900BD22A0 /* AppManager.swift in Sources */,
 				F51EC9001BC1B5F100BD22A0 /* Visit.swift in Sources */,
 				F51EC9061BC1B8C200BD22A0 /* Task.swift in Sources */,
+				F5BBECE71BD0FF6200551B67 /* collPhotoDiary.swift in Sources */,
 				F51EC9081BC1B9BD00BD22A0 /* TaskRequest.swift in Sources */,
 				F51EC8F21BC1B22100BD22A0 /* Group.swift in Sources */,
 				F5BBECDD1BD0ECED00551B67 /* viewTasks.swift in Sources */,
@@ -452,14 +492,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F51EC8C21BC1AB7F00BD22A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F51EC8C31BC1AB7F00BD22A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F51EC8CA1BC1AB7F00BD22A0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
