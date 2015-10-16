@@ -22,6 +22,6 @@ class Visit : AgendaItem {
     
     func Join(person : Person)
     {
-    
+        
     }
 }

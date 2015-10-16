@@ -27,4 +27,10 @@ class Person{
         self.phoneNumber = phoneNumber
         self.groups = groups
     }
+    
+    func CreateGroup()
+    {
+        
+    }
+    
 }

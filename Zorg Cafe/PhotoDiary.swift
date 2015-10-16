@@ -39,4 +39,14 @@ class PhotoDiary{
             }
         }
     }
+    
+    func AddItem(item: DiaryItem)
+    {
+        
+    }
+    
+    func RemoveItem(item: DiaryItem)
+    {
+        
+    }
 }

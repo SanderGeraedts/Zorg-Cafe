@@ -10,4 +10,16 @@ import Foundation
 
 class TaskManager{
     
+    
+    // Methodes
+    func AddTask(task: Task)
+    {
+        
+    }
+    
+    
+    func removeTask(task: Task)
+    {
+        
+    }
 }

@@ -21,4 +21,15 @@ class GroupApplication{
         self.user = user
         self.group = group
     }
+    
+    //Methodes
+    func Accept()
+    {
+        
+    }
+    
+    func Deny()
+    {
+        
+    }
 }
