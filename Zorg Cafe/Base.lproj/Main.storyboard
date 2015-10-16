@@ -23,18 +23,18 @@
                                     <outletCollection property="gestureRecognizers" destination="DAH-Ke-PQh" appends="YES" id="5Xe-rC-Zun"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="burgermenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="YSg-M3-Ufk">
-                                <rect key="frame" x="492" y="20" width="128" height="128"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="F0X-in-SVa" appends="YES" id="kbn-9C-nYG"/>
-                                </connections>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cancelbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="d4D-bO-44a">
                                 <rect key="frame" x="256" y="20" width="128" height="128"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="00T-dF-emo" appends="YES" id="TYI-D0-39V"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="burgermenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="YSg-M3-Ufk">
+                                <rect key="frame" x="492" y="20" width="128" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F0X-in-SVa" appends="YES" id="kbn-9C-nYG"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -51,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="904" y="1322"/>
         </scene>
-        <!--Taken-->
+        <!--Verzoeken-->
         <scene sceneID="vnZ-n3-yR5">
             <objects>
                 <viewController id="PDj-Db-Pby" sceneMemberID="viewController">
@@ -87,7 +87,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Taken" id="caW-bN-BPp"/>
+                    <tabBarItem key="tabBarItem" title="Verzoeken" id="caW-bN-BPp"/>
                     <navigationItem key="navigationItem" id="9Xm-dJ-PtW"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="640" height="960"/>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="904" y="2402"/>
         </scene>
-        <!--Dagboek-->
+        <!--Fotodagboek-->
         <scene sceneID="xpr-s8-cwz">
             <objects>
-                <viewController id="PAo-Wo-fry" sceneMemberID="viewController">
+                <viewController id="PAo-Wo-fry" customClass="viewPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GlC-sg-VqT"/>
                         <viewControllerLayoutGuide type="bottom" id="jRz-fP-KCa"/>
@@ -121,7 +121,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dagboek" id="Rxt-zR-tB7"/>
+                    <tabBarItem key="tabBarItem" title="Fotodagboek" id="Rxt-zR-tB7"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="640" height="960"/>
                 </viewController>
@@ -149,7 +149,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0X-xH-68U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="615"/>
+            <point key="canvasLocation" x="-366" y="635"/>
         </scene>
     </scenes>
     <resources>

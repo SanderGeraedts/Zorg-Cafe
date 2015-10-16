@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DagboekViewController: UIViewController {
+class viewPhotoDiary : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
