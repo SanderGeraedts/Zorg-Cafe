@@ -131,7 +131,7 @@ class Date{
         }
     }
     
-    func Day() -> Days?{
+    private func Day() -> Days?{
         let formatter = NSDateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
         if let returnDate = formatter.dateFromString(self.ToString()) {
