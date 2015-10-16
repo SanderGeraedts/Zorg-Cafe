@@ -12,11 +12,31 @@ class PhotoDiary{
     
     //properties
     var id : Int
-    var items : [DiaryItem]?
+    var items : [DiaryItem]
     
     //constructor
     init(id : Int, items : [DiaryItem]?){
         self.id = id
-        self.items = items
+        
+        if(items != nil){
+            self.items = items!
+        }
+        else{
+            self.items = [DiaryItem]()
+        }
+        
+    }
+    
+    //methods
+    func Add(item : DiaryItem){
+        items.append(item)
+    }
+    
+    func Remove(item : DiaryItem){
+        for(var i = 0; i < items.count; i++){
+            if(self.items[i].id == item.id){
+                self.items.removeAtIndex(i)
+            }
+        }
     }
 }

@@ -31,6 +31,7 @@
 		F57BA2161BC7A19E0083DCB0 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BA2151BC7A19E0083DCB0 /* DateTime.swift */; settings = {ASSET_TAGS = (); }; };
 		F5BBECDB1BD0ECBD00551B67 /* viewVisits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECDA1BD0ECBD00551B67 /* viewVisits.swift */; settings = {ASSET_TAGS = (); }; };
 		F5BBECDD1BD0ECED00551B67 /* viewTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECDC1BD0ECED00551B67 /* viewTasks.swift */; settings = {ASSET_TAGS = (); }; };
+		F5BBECDF1BD0F37400551B67 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBECDE1BD0F37400551B67 /* LocalData.swift */; settings = {ASSET_TAGS = (); }; };
 		F5E9E4CB1BCA86D40041CC25 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4CA1BCA86D40041CC25 /* calendar.png */; settings = {ASSET_TAGS = (); }; };
 		F5E9E4CD1BCA87410041CC25 /* cancelbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4CC1BCA87410041CC25 /* cancelbutton.png */; settings = {ASSET_TAGS = (); }; };
 		F5E9E4CF1BCA877D0041CC25 /* burgermenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4CE1BCA877D0041CC25 /* burgermenu.png */; settings = {ASSET_TAGS = (); }; };
@@ -87,6 +88,7 @@
 		F57BA2151BC7A19E0083DCB0 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		F5BBECDA1BD0ECBD00551B67 /* viewVisits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewVisits.swift; sourceTree = "<group>"; };
 		F5BBECDC1BD0ECED00551B67 /* viewTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewTasks.swift; sourceTree = "<group>"; };
+		F5BBECDE1BD0F37400551B67 /* LocalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 		F5E9E4CA1BCA86D40041CC25 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		F5E9E4CC1BCA87410041CC25 /* cancelbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancelbutton.png; sourceTree = "<group>"; };
 		F5E9E4CE1BCA877D0041CC25 /* burgermenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgermenu.png; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		F5BBECD51BD0D79A00551B67 /* Connectivity */ = {
 			isa = PBXGroup;
 			children = (
+				F5BBECDE1BD0F37400551B67 /* LocalData.swift */,
 			);
 			name = Connectivity;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				F51EC8FA1BC1B34600BD22A0 /* DiaryItem.swift in Sources */,
 				F51EC8C71BC1AB7F00BD22A0 /* Zorg_Cafe.xcdatamodeld in Sources */,
 				F51EC8F01BC1AD8300BD22A0 /* Person.swift in Sources */,
+				F5BBECDF1BD0F37400551B67 /* LocalData.swift in Sources */,
 				F51EC8F41BC1B2B900BD22A0 /* AppManager.swift in Sources */,
 				F51EC9001BC1B5F100BD22A0 /* Visit.swift in Sources */,
 				F51EC9061BC1B8C200BD22A0 /* Task.swift in Sources */,

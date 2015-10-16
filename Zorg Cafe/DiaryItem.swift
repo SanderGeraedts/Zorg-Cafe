@@ -7,20 +7,21 @@
 //
 
 import Foundation
+import UIKit
 
 class DiaryItem{
     
     //properties
     var id : Int
-    var imageUrl : String
+    var image : UIImage
     var text : String
     
     var uploader : Person
     
     //constructor
-    init(id : Int, imageUrl : String, text : String, uploader : Person){
+    init(id : Int, image : UIImage, text : String, uploader : Person){
         self.id = id
-        self.imageUrl = imageUrl
+        self.image = image
         self.text = text
         
         self.uploader = uploader
