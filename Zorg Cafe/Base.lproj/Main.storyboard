@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P0t-oy-WBW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Bezoek-->
@@ -111,15 +112,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="640" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="burgermenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="q30-Ef-76J">
-                                <rect key="frame" x="492" y="28" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="burgermenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="q30-Ef-76J">
+                                <rect key="frame" x="513" y="46" width="44" height="44"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="DdA-NP-bJ8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DdA-NP-bJ8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DdA-NP-bJ8"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Rms-bt-fIv" appends="YES" id="kEQ-Vw-u25"/>
                                 </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q30-Ef-76J" firstAttribute="trailing" secondItem="Hck-sw-N6F" secondAttribute="trailingMargin" id="XBR-aD-qTW"/>
+                            <constraint firstItem="q30-Ef-76J" firstAttribute="top" secondItem="GlC-sg-VqT" secondAttribute="bottom" constant="8" symbolic="YES" id="dxh-s6-Wbr"/>
+                            <constraint firstItem="jRz-fP-KCa" firstAttribute="top" secondItem="q30-Ef-76J" secondAttribute="bottom" constant="839" id="yvL-Cv-QCz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XBR-aD-qTW"/>
+                                <exclude reference="dxh-s6-Wbr"/>
+                                <exclude reference="yvL-Cv-QCz"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="XBR-aD-qTW"/>
+                                <include reference="dxh-s6-Wbr"/>
+                                <include reference="yvL-Cv-QCz"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fotodagboek" id="Rxt-zR-tB7"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
