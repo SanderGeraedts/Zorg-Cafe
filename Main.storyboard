@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kCJ-L3-62J">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Bezoek-->
@@ -18,11 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bezoek" id="unf-7m-jq1"/>
+                    <navigationItem key="navigationItem" id="uYJ-lT-ABD">
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="compose" id="34a-g7-gjN"/>
+                            <barButtonItem systemItem="edit" id="kMb-nb-1VF"/>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Group" id="n2e-Ln-8EC"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Rh-VX-gyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="1209"/>
+            <point key="canvasLocation" x="2421.75" y="1284.5"/>
         </scene>
         <!--Verzoeken-->
         <scene sceneID="TJ5-Z5-zzV">
@@ -41,168 +47,103 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvC-hP-r93" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="1885"/>
+            <point key="canvasLocation" x="1548.75" y="2096.5"/>
         </scene>
-        <!--View Photo Diary-->
-        <scene sceneID="xvs-hx-pvV">
+        <!--Fotodagboek-->
+        <scene sceneID="L4Z-Xe-LHG">
             <objects>
-                <viewController id="QMU-Df-RW0" customClass="viewPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="b48-jr-be9"/>
-                        <viewControllerLayoutGuide type="bottom" id="8RR-MO-S0N"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xXv-dw-bXl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <collectionViewController id="hZi-5v-TfL" customClass="collPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" id="hDh-4Z-GUA">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jew-PG-rXT">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="usW-kR-ZDX">
-                                    <size key="itemSize" width="400" height="515"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoDiaryDay" id="byc-Ol-SXt" customClass="cellPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="515"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vrijdag 16 Oktober" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPd-rh-dYE">
-                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RFj-LL-1jS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="hxn-jk-GKX">
-                                                        <size key="itemSize" width="200" height="200"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gmZ-Uy-BIg" customClass="cellPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jAZ-BB-wcn">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            </view>
-                                                            <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="jAZ-BB-wcn" secondAttribute="bottom" id="D7R-Su-wml"/>
-                                                                <constraint firstItem="jAZ-BB-wcn" firstAttribute="leading" secondItem="gmZ-Uy-BIg" secondAttribute="leading" id="Qhw-rJ-21B"/>
-                                                                <constraint firstAttribute="trailing" secondItem="jAZ-BB-wcn" secondAttribute="trailing" id="Qi2-iv-bl3"/>
-                                                                <constraint firstItem="jAZ-BB-wcn" firstAttribute="top" secondItem="gmZ-Uy-BIg" secondAttribute="top" id="xJN-ml-fbK"/>
-                                                            </constraints>
-                                                            <variation key="default">
-                                                                <mask key="subviews">
-                                                                    <exclude reference="jAZ-BB-wcn"/>
-                                                                </mask>
-                                                                <mask key="constraints">
-                                                                    <exclude reference="D7R-Su-wml"/>
-                                                                    <exclude reference="Qhw-rJ-21B"/>
-                                                                    <exclude reference="Qi2-iv-bl3"/>
-                                                                    <exclude reference="xJN-ml-fbK"/>
-                                                                </mask>
-                                                            </variation>
-                                                            <variation key="widthClass=compact">
-                                                                <mask key="subviews">
-                                                                    <include reference="jAZ-BB-wcn"/>
-                                                                </mask>
-                                                                <mask key="constraints">
-                                                                    <include reference="D7R-Su-wml"/>
-                                                                    <include reference="Qhw-rJ-21B"/>
-                                                                    <include reference="Qi2-iv-bl3"/>
-                                                                    <include reference="xJN-ml-fbK"/>
-                                                                </mask>
-                                                            </variation>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                </collectionView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="RFj-LL-1jS" firstAttribute="leading" secondItem="DPd-rh-dYE" secondAttribute="leading" id="08g-yZ-KCq"/>
-                                            <constraint firstItem="RFj-LL-1jS" firstAttribute="trailing" secondItem="DPd-rh-dYE" secondAttribute="trailing" id="8dl-Uq-vEk"/>
-                                            <constraint firstAttribute="trailing" secondItem="RFj-LL-1jS" secondAttribute="trailing" id="DRq-7V-WGu"/>
-                                            <constraint firstItem="RFj-LL-1jS" firstAttribute="top" secondItem="DPd-rh-dYE" secondAttribute="bottom" constant="6" id="VKe-aW-wrB"/>
-                                            <constraint firstItem="DPd-rh-dYE" firstAttribute="top" secondItem="byc-Ol-SXt" secondAttribute="topMargin" id="Y1T-gu-yme"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="RFj-LL-1jS" secondAttribute="bottom" constant="20" id="bre-0N-sHb"/>
-                                            <constraint firstItem="DPd-rh-dYE" firstAttribute="leading" secondItem="byc-Ol-SXt" secondAttribute="leading" id="hDb-0R-4Nn"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="DPd-rh-dYE"/>
-                                                <exclude reference="RFj-LL-1jS"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="Y1T-gu-yme"/>
-                                                <exclude reference="hDb-0R-4Nn"/>
-                                                <exclude reference="08g-yZ-KCq"/>
-                                                <exclude reference="8dl-Uq-vEk"/>
-                                                <exclude reference="DRq-7V-WGu"/>
-                                                <exclude reference="VKe-aW-wrB"/>
-                                                <exclude reference="bre-0N-sHb"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <mask key="subviews">
-                                                <include reference="DPd-rh-dYE"/>
-                                                <include reference="RFj-LL-1jS"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="Y1T-gu-yme"/>
-                                                <include reference="hDb-0R-4Nn"/>
-                                                <include reference="08g-yZ-KCq"/>
-                                                <include reference="8dl-Uq-vEk"/>
-                                                <include reference="DRq-7V-WGu"/>
-                                                <include reference="VKe-aW-wrB"/>
-                                                <include reference="bre-0N-sHb"/>
-                                            </mask>
-                                        </variation>
-                                    </collectionViewCell>
-                                </cells>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="551"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QRX-Yg-376">
+                            <size key="itemSize" width="400" height="487"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiaryItem" id="a0F-6d-HQR" customClass="cellPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="487"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WGF-uM-3Rx">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="46" width="400" height="360"/>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NS-7R-fOX">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="8" width="400" height="21"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tekst" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTw-L2-lqe">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="405" width="400" height="82"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="WGF-uM-3Rx"/>
+                                        <exclude reference="0NS-7R-fOX"/>
+                                        <exclude reference="jTw-L2-lqe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="WGF-uM-3Rx"/>
+                                        <include reference="0NS-7R-fOX"/>
+                                        <include reference="jTw-L2-lqe"/>
+                                    </mask>
                                 </variation>
                                 <connections>
-                                    <outlet property="dataSource" destination="QMU-Df-RW0" id="UhL-ld-vnR"/>
+                                    <outlet property="date" destination="0NS-7R-fOX" id="aey-ZG-rDU"/>
+                                    <outlet property="image" destination="WGF-uM-3Rx" id="Cjo-N4-tG6"/>
+                                    <outlet property="imageText" destination="jTw-L2-lqe" id="xEf-Tm-jFR"/>
                                 </connections>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="jew-PG-rXT"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="jew-PG-rXT"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" id="RpX-Vt-FU8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="1gG-fN-Phh"/>
-                        <barButtonItem key="rightBarButtonItem" title="Group" id="f93-ti-qcd"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="hZi-5v-TfL" id="akj-7x-6ly"/>
+                            <outlet property="delegate" destination="hZi-5v-TfL" id="xkg-zZ-ORJ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Fotodagboek" id="mQY-4t-Cj4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="7hl-BM-jrM">
+                            <connections>
+                                <action selector="AddPhoto:" destination="hZi-5v-TfL" id="yiw-Le-dhI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Groep" id="5pc-oh-oH2">
+                            <connections>
+                                <action selector="btnGroup:" destination="hZi-5v-TfL" id="4fZ-Ur-F4G"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kgd-jx-nGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnAddPhoto" destination="7hl-BM-jrM" id="GdE-ee-Yfp"/>
+                        <outlet property="btnGroup" destination="5pc-oh-oH2" id="A3l-kB-6xX"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjJ-GM-g4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2467.5" y="535"/>
+            <point key="canvasLocation" x="2433" y="535"/>
         </scene>
         <!--View Diary Item-->
         <scene sceneID="Ga7-h5-rRC">
@@ -213,18 +154,22 @@
                         <viewControllerLayoutGuide type="bottom" id="iA5-oO-h5M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6ON-eE-LuC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7xb-wW-4OY"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LO1-Gp-hXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3166.5" y="537"/>
+            <point key="canvasLocation" x="3249" y="535"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eoe-Sg-AYz">
             <objects>
                 <tabBarController id="kCJ-L3-62J" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="u2G-d7-Auz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -232,7 +177,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="hID-E3-hDr" kind="relationship" relationship="viewControllers" id="5mR-d2-UdL"/>
-                        <segue destination="ug1-9x-IhB" kind="relationship" relationship="viewControllers" id="7c9-ia-fQF"/>
+                        <segue destination="Vmo-PF-8Xy" kind="relationship" relationship="viewControllers" id="7c9-ia-fQF"/>
                         <segue destination="5vg-Ej-t4r" kind="relationship" relationship="viewControllers" id="0qq-uo-2VF"/>
                     </connections>
                 </tabBarController>
@@ -246,18 +191,38 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hID-E3-hDr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Fotodagboek" id="LLf-mU-6Pi"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FsI-0r-N6U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="QMU-Df-RW0" kind="relationship" relationship="rootViewController" id="oPs-eh-MAi"/>
+                        <segue destination="hZi-5v-TfL" kind="show" id="hah-Wk-jJP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58L-Cg-L4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1549.5" y="535"/>
+        </scene>
+        <!--Bezoek-->
+        <scene sceneID="Uvh-Kd-V0x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vmo-PF-8Xy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bezoek" id="unf-7m-jq1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IUn-Ls-O01">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ug1-9x-IhB" kind="relationship" relationship="rootViewController" id="F1F-ks-li6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBX-u6-Ecl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541.25" y="1284.5"/>
         </scene>
     </scenes>
 </document>

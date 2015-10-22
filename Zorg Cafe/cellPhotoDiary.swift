@@ -10,4 +10,9 @@ import UIKit
 
 class cellPhotoDiary: UICollectionViewCell {
     
+    @IBOutlet var date: UILabel!
+    @IBOutlet var imageText: UILabel!
+    @IBOutlet var image: UIImageView!
+    
+    
 }

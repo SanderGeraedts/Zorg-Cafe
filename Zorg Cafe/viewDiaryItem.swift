@@ -10,7 +10,7 @@ import UIKit
 
 class viewDiaryItem : UIViewController {
 
-    var item : DiaryItem?
+    // var item : DiaryItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()

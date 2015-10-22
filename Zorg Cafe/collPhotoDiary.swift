@@ -8,10 +8,26 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "DiaryItem"
 
-class collPhotoDiary: UICollectionViewController{
-
+class collPhotoDiary : UICollectionViewController{
+    
+    @IBOutlet var btnAddPhoto: UIBarButtonItem!
+    @IBOutlet var btnGroup: UIBarButtonItem!
+    
+    
+    @IBAction func AddPhoto(sender: AnyObject) {
+        let alertController = UIAlertController(title: "iOScreator", message:
+            "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnGroup(sender: AnyObject) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,13 +59,13 @@ class collPhotoDiary: UICollectionViewController{
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 2
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
