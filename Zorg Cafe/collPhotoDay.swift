@@ -8,9 +8,9 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "PhotoDay"
 
-class collPhotoDay: UICollectionViewController {
+class collPhotoDay: UICollectionViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()

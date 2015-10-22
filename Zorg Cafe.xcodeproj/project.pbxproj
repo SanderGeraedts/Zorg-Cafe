@@ -42,6 +42,7 @@
 		F5E9E4D11BCA88300041CC25 /* filtericon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4D01BCA88300041CC25 /* filtericon.png */; settings = {ASSET_TAGS = (); }; };
 		F5E9E4D31BCA88710041CC25 /* plusicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4D21BCA88710041CC25 /* plusicon.png */; settings = {ASSET_TAGS = (); }; };
 		F5E9E4D51BCA8B090041CC25 /* viewPhotoDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E9E4D41BCA8B090041CC25 /* viewPhotoDiary.swift */; settings = {ASSET_TAGS = (); }; };
+		F5EDDFD21BD13325002B14BA /* viewDiaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDDFD11BD13325002B14BA /* viewDiaryItem.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		F5E9E4D01BCA88300041CC25 /* filtericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filtericon.png; sourceTree = "<group>"; };
 		F5E9E4D21BCA88710041CC25 /* plusicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusicon.png; sourceTree = "<group>"; };
 		F5E9E4D41BCA8B090041CC25 /* viewPhotoDiary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewPhotoDiary.swift; sourceTree = "<group>"; };
+		F5EDDFD11BD13325002B14BA /* viewDiaryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewDiaryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 				F5BBECE81BD0FF9A00551B67 /* cellPhotoDiary.swift */,
 				F5BBECEA1BD0FFC400551B67 /* collPhotoDay.swift */,
 				F5BBECEC1BD0FFE500551B67 /* cellPhotoDay.swift */,
+				F5EDDFD11BD13325002B14BA /* viewDiaryItem.swift */,
 			);
 			name = PhotoDiary;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				F51EC9041BC1B6E700BD22A0 /* TaskManager.swift in Sources */,
 				F5E9E4D51BCA8B090041CC25 /* viewPhotoDiary.swift in Sources */,
 				F51EC8FC1BC1B36D00BD22A0 /* VisitManager.swift in Sources */,
+				F5EDDFD21BD13325002B14BA /* viewDiaryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
