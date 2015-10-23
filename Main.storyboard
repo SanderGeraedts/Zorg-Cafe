@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TuB-5I-xAo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vLT-fR-H6n">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -39,7 +39,7 @@
                         <viewControllerLayoutGuide type="bottom" id="L4s-OT-VtC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YvP-qC-BHF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -48,102 +48,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvC-hP-r93" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1548.75" y="2096.5"/>
-        </scene>
-        <!--Fotodagboek-->
-        <scene sceneID="L4Z-Xe-LHG">
-            <objects>
-                <collectionViewController id="hZi-5v-TfL" customClass="collPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" id="hDh-4Z-GUA">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QRX-Yg-376">
-                            <size key="itemSize" width="400" height="487"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiaryItem" id="a0F-6d-HQR" customClass="cellPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="487"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WGF-uM-3Rx">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="0.0" y="46" width="400" height="360"/>
-                                            </variation>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NS-7R-fOX">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="0.0" y="8" width="400" height="21"/>
-                                            </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tekst" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTw-L2-lqe">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="0.0" y="405" width="400" height="82"/>
-                                            </variation>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="WGF-uM-3Rx"/>
-                                        <exclude reference="0NS-7R-fOX"/>
-                                        <exclude reference="jTw-L2-lqe"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="WGF-uM-3Rx"/>
-                                        <include reference="0NS-7R-fOX"/>
-                                        <include reference="jTw-L2-lqe"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <outlet property="date" destination="0NS-7R-fOX" id="aey-ZG-rDU"/>
-                                    <outlet property="image" destination="WGF-uM-3Rx" id="Cjo-N4-tG6"/>
-                                    <outlet property="imageText" destination="jTw-L2-lqe" id="xEf-Tm-jFR"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="hZi-5v-TfL" id="akj-7x-6ly"/>
-                            <outlet property="delegate" destination="hZi-5v-TfL" id="xkg-zZ-ORJ"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Fotodagboek" id="mQY-4t-Cj4">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="7hl-BM-jrM">
-                            <connections>
-                                <action selector="AddPhoto:" destination="hZi-5v-TfL" id="yiw-Le-dhI"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Groep" id="5pc-oh-oH2">
-                            <connections>
-                                <action selector="btnGroup:" destination="hZi-5v-TfL" id="4fZ-Ur-F4G"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="btnAddPhoto" destination="7hl-BM-jrM" id="GdE-ee-Yfp"/>
-                        <outlet property="btnGroup" destination="5pc-oh-oH2" id="A3l-kB-6xX"/>
-                    </connections>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sjJ-GM-g4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2433" y="535"/>
         </scene>
         <!--View Diary Item-->
         <scene sceneID="Ga7-h5-rRC">
@@ -154,16 +58,45 @@
                         <viewControllerLayoutGuide type="bottom" id="iA5-oO-h5M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6ON-eE-LuC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mBQ-nM-AsT">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="375" height="475"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2d7-HW-Foy">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="547" width="375" height="71"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mBQ-nM-AsT"/>
+                                <exclude reference="2d7-HW-Foy"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mBQ-nM-AsT"/>
+                                <include reference="2d7-HW-Foy"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="7xb-wW-4OY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LO1-Gp-hXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3249" y="535"/>
+            <point key="canvasLocation" x="3419.25" y="198.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eoe-Sg-AYz">
@@ -176,8 +109,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hID-E3-hDr" kind="relationship" relationship="viewControllers" id="5mR-d2-UdL"/>
                         <segue destination="Vmo-PF-8Xy" kind="relationship" relationship="viewControllers" id="7c9-ia-fQF"/>
+                        <segue destination="o5F-qD-L87" kind="relationship" relationship="viewControllers" id="Yzt-at-U8D"/>
                         <segue destination="5vg-Ej-t4r" kind="relationship" relationship="viewControllers" id="0qq-uo-2VF"/>
                     </connections>
                 </tabBarController>
@@ -185,25 +118,88 @@
             </objects>
             <point key="canvasLocation" x="594" y="879"/>
         </scene>
-        <!--Fotodagboek-->
-        <scene sceneID="6st-Wz-lko">
+        <!--View Photo Diary-->
+        <scene sceneID="dMO-7o-D5W">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hID-E3-hDr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fotodagboek" id="LLf-mU-6Pi"/>
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FsI-0r-N6U">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <collectionViewController id="l7L-El-6OI" customClass="viewPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="eHD-eg-Lv0">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QnZ-II-lfk">
+                            <size key="itemSize" width="375" height="447"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="diaryItem" id="Bc6-9l-dtC" customClass="cellPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ji-0N-BMR">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                            </variation>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Za2-rN-sge">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="8" y="36" width="359" height="359"/>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJ3-xo-2uS">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="8" y="406" width="359" height="21"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="0ji-0N-BMR"/>
+                                        <exclude reference="Za2-rN-sge"/>
+                                        <exclude reference="LJ3-xo-2uS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="0ji-0N-BMR"/>
+                                        <include reference="Za2-rN-sge"/>
+                                        <include reference="LJ3-xo-2uS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="imgView" destination="Za2-rN-sge" id="krQ-sR-l1q"/>
+                                    <outlet property="lblDate" destination="0ji-0N-BMR" id="LyG-9w-da1"/>
+                                    <outlet property="lblText" destination="LJ3-xo-2uS" id="Nuv-7I-apL"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="l7L-El-6OI" id="yx8-Qh-4d9"/>
+                            <outlet property="delegate" destination="l7L-El-6OI" id="whd-Le-VFc"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="MeE-UC-75n"/>
                     <connections>
-                        <segue destination="hZi-5v-TfL" kind="show" id="hah-Wk-jJP"/>
+                        <outlet property="collectionView" destination="eHD-eg-Lv0" id="doE-Yi-U9v"/>
+                        <segue destination="WUy-IJ-dvX" kind="show" identifier="showDiaryItem" id="Sah-7m-WNe"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="58L-Cg-L4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3s6-XV-KUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549.5" y="535"/>
+            <point key="canvasLocation" x="2442.75" y="514.5"/>
         </scene>
         <!--Bezoek-->
         <scene sceneID="Uvh-Kd-V0x">
@@ -223,6 +219,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBX-u6-Ecl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1541.25" y="1284.5"/>
+        </scene>
+        <!--Fotodagboek-->
+        <scene sceneID="TP8-65-cfL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o5F-qD-L87" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fotodagboek" id="eyK-iy-lLH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="51K-4c-ViM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="l7L-El-6OI" kind="relationship" relationship="rootViewController" id="7H1-IY-6sp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2w4-TT-rvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562.25" y="514.5"/>
         </scene>
     </scenes>
 </document>

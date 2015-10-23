@@ -26,6 +26,19 @@ class Date{
     var month : Int
     var year : Int
     
+    //constructor currentDate
+//    init(){
+//        
+//        let nsDate = NSDate()
+//        let formatter = NSDateFormatter()
+//        formatter.dateFormat = "dd/MM/yyyy"
+//        
+//        let dateString = formatter.stringFromDate(nsDate)
+//        
+//        self.day = Range(start: dateString.startIndex, end: advance(dateString.startIndex, 2)) as! Int
+//        self.month = Range(start: advancedBy(dateString.startIndex, 4), end: advance(dateString.startIndex, 6)) as! Int
+//    }
+    
     //constructor
     init(day : Int, month : Int, year : Int)
     {

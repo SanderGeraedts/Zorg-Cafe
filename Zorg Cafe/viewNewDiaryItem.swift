@@ -1,5 +1,5 @@
 //
-//  viewDiaryItem.swift
+//  viewNewDiaryItem.swift
 //  Zorg Cafe
 //
 //  Created by Fhict on 23/10/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class viewDiaryItem: UIViewController {
+class viewNewDiaryItem: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

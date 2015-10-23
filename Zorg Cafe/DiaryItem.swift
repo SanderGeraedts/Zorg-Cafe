@@ -16,14 +16,16 @@ class DiaryItem{
     var image : UIImage
     var text : String
     
+    var date : Date
     var uploader : Person
     
     //constructor
-    init(id : Int, image : UIImage, text : String, uploader : Person){
+    init(id : Int, image : UIImage, text : String, date : Date, uploader : Person){
         self.id = id
         self.image = image
         self.text = text
         
+        self.date = date
         self.uploader = uploader
     }
 }
