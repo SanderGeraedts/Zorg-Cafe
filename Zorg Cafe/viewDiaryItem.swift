@@ -14,7 +14,7 @@ class viewDiaryItem: UIViewController {
     @IBOutlet weak var lblText: UILabel!
     @IBOutlet weak var lblMadeBy: UILabel!
     
-    var diaryItem = DiaryItem(id: 1, image: UIImage(), text: "", date: Date(), uploader: Person(id: 1, name: "", caregiver: false, phoneNumber: "", groups: nil))
+    var diaryItem = DiaryItem(id: 1, image: UIImage(), text: "", date: Date(), uploader: Person(id: 1, name: "", avatar: UIImage(), caregiver: false, phoneNumber: "", groups: nil))
     
     override func viewDidLoad() {
         super.viewDidLoad()

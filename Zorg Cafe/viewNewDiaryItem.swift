@@ -33,7 +33,7 @@ class viewNewDiaryItem: UIViewController {
         
         //new diary item
         let id = photoDiary.items.count
-        let diaryItem = DiaryItem(id: id, image: self.image, text: txtDescription.text!, date: Date(), uploader: Person(id: 1, name: "Sander Geraedts", caregiver: true, phoneNumber: "06-23775102", groups: nil))
+        let diaryItem = DiaryItem(id: id, image: self.image, text: txtDescription.text!, date: Date(), uploader: Person(id: 1, name: "Sander Geraedts", avatar: UIImage(),caregiver: true, phoneNumber: "06-23775102", groups: nil))
         
         //add to photoDiary
         photoDiary.items.append(diaryItem)

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kCJ-L3-62J">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
@@ -130,16 +131,16 @@
                                 <exclude reference="2d7-HW-Foy"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="bm5-gc-JyK"/>
+                                <exclude reference="zJx-kL-I5f"/>
+                                <exclude reference="4dh-ME-f3v"/>
+                                <exclude reference="tx3-Fu-ga6"/>
+                                <exclude reference="uWJ-Mg-opK"/>
                                 <exclude reference="7Vt-CO-r7C"/>
                                 <exclude reference="7oK-x9-vS7"/>
                                 <exclude reference="Iyq-K4-dwh"/>
                                 <exclude reference="RKc-MO-NI7"/>
                                 <exclude reference="xNM-je-urB"/>
-                                <exclude reference="4dh-ME-f3v"/>
-                                <exclude reference="tx3-Fu-ga6"/>
-                                <exclude reference="uWJ-Mg-opK"/>
-                                <exclude reference="bm5-gc-JyK"/>
-                                <exclude reference="zJx-kL-I5f"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -149,16 +150,16 @@
                                 <include reference="2d7-HW-Foy"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="bm5-gc-JyK"/>
+                                <include reference="zJx-kL-I5f"/>
+                                <include reference="4dh-ME-f3v"/>
+                                <include reference="tx3-Fu-ga6"/>
+                                <include reference="uWJ-Mg-opK"/>
                                 <include reference="7Vt-CO-r7C"/>
                                 <include reference="7oK-x9-vS7"/>
                                 <include reference="Iyq-K4-dwh"/>
                                 <include reference="RKc-MO-NI7"/>
                                 <include reference="xNM-je-urB"/>
-                                <include reference="4dh-ME-f3v"/>
-                                <include reference="tx3-Fu-ga6"/>
-                                <include reference="uWJ-Mg-opK"/>
-                                <include reference="bm5-gc-JyK"/>
-                                <include reference="zJx-kL-I5f"/>
                             </mask>
                         </variation>
                     </view>
@@ -185,6 +186,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Uet-w3-HQ2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oJw-Lp-QbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="azH-jd-1nt">
@@ -235,15 +237,15 @@
                                 <exclude reference="ccW-HD-zJJ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Fpx-Nj-pY9"/>
-                                <exclude reference="JzU-MB-VXH"/>
-                                <exclude reference="sYL-HW-0JJ"/>
-                                <exclude reference="zN4-d1-oNB"/>
+                                <exclude reference="4Fy-6U-yhi"/>
                                 <exclude reference="EE4-kA-UoT"/>
                                 <exclude reference="4aQ-aG-7E3"/>
                                 <exclude reference="C53-hb-778"/>
                                 <exclude reference="bJ3-AV-aR2"/>
-                                <exclude reference="4Fy-6U-yhi"/>
+                                <exclude reference="Fpx-Nj-pY9"/>
+                                <exclude reference="JzU-MB-VXH"/>
+                                <exclude reference="sYL-HW-0JJ"/>
+                                <exclude reference="zN4-d1-oNB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -253,15 +255,15 @@
                                 <include reference="ccW-HD-zJJ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Fpx-Nj-pY9"/>
-                                <include reference="JzU-MB-VXH"/>
-                                <include reference="sYL-HW-0JJ"/>
-                                <include reference="zN4-d1-oNB"/>
+                                <include reference="4Fy-6U-yhi"/>
                                 <include reference="EE4-kA-UoT"/>
                                 <include reference="4aQ-aG-7E3"/>
                                 <include reference="C53-hb-778"/>
                                 <include reference="bJ3-AV-aR2"/>
-                                <include reference="4Fy-6U-yhi"/>
+                                <include reference="Fpx-Nj-pY9"/>
+                                <include reference="JzU-MB-VXH"/>
+                                <include reference="sYL-HW-0JJ"/>
+                                <include reference="zN4-d1-oNB"/>
                             </mask>
                         </variation>
                     </view>
@@ -299,6 +301,7 @@
             <objects>
                 <collectionViewController id="l7L-El-6OI" customClass="viewPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="eHD-eg-Lv0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QnZ-II-lfk">
@@ -309,7 +312,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="diaryItem" id="Bc6-9l-dtC" customClass="cellPhotoDiary" customModule="Zorg_Cafe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="7" y="64" width="362" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="362" height="450"/>
