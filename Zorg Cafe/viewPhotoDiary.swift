@@ -2,7 +2,7 @@
 //  viewPhotoDiary.swift
 //  Zorg Cafe
 //
-//  Created by Fhict on 23/10/15.
+//  Created by Sander Geraedts on 23/10/15.
 //  Copyright © 2015 Codepanda. All rights reserved.
 //
 
@@ -13,19 +13,15 @@ private let reuseIdentifier = "diaryItem"
 class viewPhotoDiary: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var photoDiary = PhotoDiary(id: 1, items: nil)
+    var newImage = UIImage()
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
         // Register cell classes
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,67 +29,100 @@ class viewPhotoDiary: UIViewController, UINavigationControllerDelegate, UIImageP
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return self.photoDiary.items.count
         
     }
-
+    
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         //create the cell
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! cellPhotoDiary
     
-        //populate the cell
-        cell.lblDate?.text = photoDiary.items[indexPath.row].date.ToSpokenDate()
-        cell.imgView?.image = photoDiary.items[indexPath.row].image
-        cell.lblText?.text = photoDiary.items[indexPath.row].text
+        //retrieve data
+        let date = photoDiary.items[indexPath.row].date.ToSpokenDate()
+        let image = photoDiary.items[indexPath.row].image
+        let text = photoDiary.items[indexPath.row].text
+        
+        //populate cell
+        cell.lblDate.text = date
+        cell.imgView.image = image
+        cell.lblText.text = text
         
         //returns the cell
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
     
+    //performs segue when cell is selected
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        self.performSegueWithIdentifier("showImage", sender: self)
+        
     }
-    */
 
+    @IBAction func AddImage(sender: AnyObject) {
+        let imageFromSource = UIImagePickerController()
+        imageFromSource.delegate = self
+        
+        //checks if the camera is available, else uses the photoroll
+        if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
+            
+            imageFromSource.sourceType = UIImagePickerControllerSourceType.Camera
+            
+        }
+        else{
+            
+            imageFromSource.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            
+        }
+        
+        self.presentViewController(imageFromSource, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        //sets newImage as the made/chosen image
+        self.newImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        self.performSegueWithIdentifier("addImage", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "showImage"){
+            
+            //get all index paths that are selected (should only be 1)
+            let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
+            
+            //get first (and only) index path of the array
+            let indexPath = indexPaths[0] as NSIndexPath
+            
+            //defines the new view controller as a view controller of the type NewViewController
+            let viewController = segue.destinationViewController as! viewDiaryItem
+            
+            //populate the view controller
+            viewController.diaryItem = photoDiary.items[indexPath.row]
+            
+            
+            //dismiss the current viewcontroller
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+        }
+        
+        if(segue.identifier == "addImage"){
+            
+            //defines the new view controller as a view controller of the type
+            let viewController = segue.destinationViewController as! viewNewDiaryItem
+            
+            //populate the view controller
+            viewController.image = self.newImage
+            viewController.photoDiary = self.photoDiary
+            viewController.maincontroller = self
+            
+            //dismiss the current viewcontroller
+            self.dismissViewControllerAnimated(false, completion: nil)
+        }
+    }
 }

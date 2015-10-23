@@ -10,10 +10,18 @@ import UIKit
 
 class viewNewDiaryItem: UIViewController {
 
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var txtDescription: UITextField!
+    
+    var image = UIImage()
+    var photoDiary = PhotoDiary(id: 1, items: [DiaryItem]())
+    var maincontroller = viewPhotoDiary()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.imgView.image = self.image
+        self.title = Date().ToSpokenDate()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +29,22 @@ class viewNewDiaryItem: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func addImage(sender: AnyObject) {
+        
+        //new diary item
+        let id = photoDiary.items.count
+        let diaryItem = DiaryItem(id: id, image: self.image, text: txtDescription.text!, date: Date(), uploader: Person(id: 1, name: "Sander Geraedts", caregiver: true, phoneNumber: "06-23775102", groups: nil))
+        
+        //add to photoDiary
+        photoDiary.items.append(diaryItem)
+        
+        //give back to main controller
+        maincontroller.photoDiary = self.photoDiary
+        
+        //go back to maincontroller
+        self.maincontroller.loadView()
+        self.navigationController?.popToViewController(maincontroller, animated: true)
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
     }
-    */
-
 }

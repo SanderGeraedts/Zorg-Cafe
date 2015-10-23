@@ -27,17 +27,22 @@ class Date{
     var year : Int
     
     //constructor currentDate
-//    init(){
-//        
-//        let nsDate = NSDate()
-//        let formatter = NSDateFormatter()
-//        formatter.dateFormat = "dd/MM/yyyy"
-//        
-//        let dateString = formatter.stringFromDate(nsDate)
-//        
-//        self.day = Range(start: dateString.startIndex, end: advance(dateString.startIndex, 2)) as! Int
-//        self.month = Range(start: advancedBy(dateString.startIndex, 4), end: advance(dateString.startIndex, 6)) as! Int
-//    }
+    init(){
+        
+        let nsDate = NSDate()
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        
+        let dateString = formatter.stringFromDate(nsDate)
+        
+        let dayString = dateString.substringWithRange(Range(start: dateString.startIndex, end: dateString.startIndex.advancedBy(2)))
+        let monthString = dateString.substringWithRange(Range(start: dateString.startIndex.advancedBy(3), end: dateString.startIndex.advancedBy(5)))
+        let yearString = dateString.substringWithRange(Range(start: dateString.endIndex.advancedBy(-4), end: dateString.endIndex))
+        
+        self.day = Int(dayString)!
+        self.month = Int(monthString)!
+        self.year = Int(yearString)!
+    }
     
     //constructor
     init(day : Int, month : Int, year : Int)

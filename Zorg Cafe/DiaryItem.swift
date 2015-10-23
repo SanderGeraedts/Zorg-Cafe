@@ -13,7 +13,7 @@ class DiaryItem{
     
     //properties
     var id : Int
-    var image : UIImage
+    var image : UIImage?
     var text : String
     
     var date : Date

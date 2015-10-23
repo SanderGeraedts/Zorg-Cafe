@@ -10,10 +10,20 @@ import UIKit
 
 class viewDiaryItem: UIViewController {
 
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var lblText: UILabel!
+    @IBOutlet weak var lblMadeBy: UILabel!
+    
+    var diaryItem = DiaryItem(id: 1, image: UIImage(), text: "", date: Date(), uploader: Person(id: 1, name: "", caregiver: false, phoneNumber: "", groups: nil))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.imgView.image = diaryItem.image
+        self.lblText.text = diaryItem.text
+        self.lblMadeBy.text = "Gemaakt door: " + diaryItem.uploader.name
+        
+        self.lblText.sizeToFit()
     }
 
     override func didReceiveMemoryWarning() {
