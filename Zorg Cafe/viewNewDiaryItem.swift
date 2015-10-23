@@ -2,7 +2,7 @@
 //  viewNewDiaryItem.swift
 //  Zorg Cafe
 //
-//  Created by Fhict on 23/10/15.
+//  Created by Sander Geraedts on 23/10/15.
 //  Copyright © 2015 Codepanda. All rights reserved.
 //
 
