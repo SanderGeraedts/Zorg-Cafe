@@ -11,10 +11,10 @@ import Foundation
 class Visit : AgendaItem {
     
     //properties
-    var visitors : [Person]
+    var visitors : String
     
     //constructor
-    init(startTime : DateTime, endTime : DateTime, visitors : [Person])
+    init(startTime : DateTime, endTime : DateTime, visitors : String)
     {
         self.visitors = visitors
         super.init(startTime: startTime, endTime: endTime)

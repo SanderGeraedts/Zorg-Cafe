@@ -44,6 +44,8 @@
 		F5E9E4CF1BCA877D0041CC25 /* burgermenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4CE1BCA877D0041CC25 /* burgermenu.png */; };
 		F5E9E4D11BCA88300041CC25 /* filtericon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4D01BCA88300041CC25 /* filtericon.png */; };
 		F5E9E4D31BCA88710041CC25 /* plusicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4D21BCA88710041CC25 /* plusicon.png */; };
+		F5F959DC1BEA8C78001BA08A /* cellVisits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F959DB1BEA8C78001BA08A /* cellVisits.swift */; settings = {ASSET_TAGS = (); }; };
+		F5F959DE1BEA9370001BA08A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F959DD1BEA9370001BA08A /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		F5E9E4CE1BCA877D0041CC25 /* burgermenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgermenu.png; sourceTree = "<group>"; };
 		F5E9E4D01BCA88300041CC25 /* filtericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filtericon.png; sourceTree = "<group>"; };
 		F5E9E4D21BCA88710041CC25 /* plusicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusicon.png; sourceTree = "<group>"; };
+		F5F959DB1BEA8C78001BA08A /* cellVisits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellVisits.swift; sourceTree = "<group>"; };
+		F5F959DD1BEA9370001BA08A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +254,7 @@
 				F51EC8FF1BC1B5F100BD22A0 /* Visit.swift */,
 				F51EC8FB1BC1B36D00BD22A0 /* VisitManager.swift */,
 				F51EC9011BC1B62000BD22A0 /* Unavailable.swift */,
+				F5F959DD1BEA9370001BA08A /* JSON.swift */,
 			);
 			name = Visits;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				F5BBECDA1BD0ECBD00551B67 /* viewVisits.swift */,
+				F5F959DB1BEA8C78001BA08A /* cellVisits.swift */,
 			);
 			name = Visits;
 			sourceTree = "<group>";
@@ -463,6 +469,8 @@
 				F51EC8F81BC1B31B00BD22A0 /* PhotoDiary.swift in Sources */,
 				F51EC8BF1BC1AB7F00BD22A0 /* AppDelegate.swift in Sources */,
 				F51EC9041BC1B6E700BD22A0 /* TaskManager.swift in Sources */,
+				F5F959DC1BEA8C78001BA08A /* cellVisits.swift in Sources */,
+				F5F959DE1BEA9370001BA08A /* JSON.swift in Sources */,
 				F5609D571BDA96B2003647AE /* TableViewController.swift in Sources */,
 				F51EC8FC1BC1B36D00BD22A0 /* VisitManager.swift in Sources */,
 			);

@@ -10,10 +10,15 @@ import UIKit
 
 class viewVisits: UIViewController {
 
+    private let reuseIdentifier = "cell"
+    
+    var visits = [Visit]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let visitloader = VisitLoader()
+        visits = visitloader.loadJsonData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +26,31 @@ class viewVisits: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return self.visits.count
+        
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        //create the cell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! cellVisits
+        
+        //retrieve data
+        let date = visits[indexPath.row].startTime.date.ToSpokenDate()
+        let time = visits[indexPath.row].startTime.time.ToString() + " - " + visits[indexPath.row].endTime.time.ToString()
+        let visitors = visits[indexPath.row].visitors
+        
+        //populate cell
+        cell.lblDate.text = date
+        cell.lblTime.text = time
+        cell.lblVisitors.text = visitors
+        
+        //returns the cell
+        return cell
+    }
 
     /*
     // MARK: - Navigation
