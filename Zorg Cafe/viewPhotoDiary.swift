@@ -40,11 +40,19 @@ class viewPhotoDiary: UIViewController, UINavigationControllerDelegate, UIImageP
         
         //create the cell
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! cellPhotoDiary
-    
+        
+        //newest items first
+        var reversed = [DiaryItem]()
+        
+        for var i = photoDiary.items.count - 1; i >= 0; i--
+        {
+            reversed.append(photoDiary.items[i])
+        }
+        
         //retrieve data
-        let date = photoDiary.items[indexPath.row].date.ToSpokenDate()
-        let image = photoDiary.items[indexPath.row].image
-        let text = photoDiary.items[indexPath.row].text
+        let date = reversed[indexPath.row].date.ToSpokenDate()
+        let image = reversed[indexPath.row].image
+        let text = reversed[indexPath.row].text
         
         //populate cell
         cell.lblDate.text = date
