@@ -18,7 +18,7 @@ class VisitLoader {
     {
         var visits = [Visit]()
         
-        let url = NSURL(string: "http://athena.fhict.nl/users/i329101/data.json")
+        let url = NSURL(string: "http://athena.fhict.nl/users/i329101/visitors.json")
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession.sharedSession()
         let dataTask = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
