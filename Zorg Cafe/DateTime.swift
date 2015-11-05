@@ -198,7 +198,13 @@ class Time{
     
     //methods
     func ToString() -> String{
-        return "\(self.hour):\(self.minute)"
+        var minute = String(self.minute)
+        
+        if(minute.characters.count == 1){
+            minute = "0" + minute
+        }
+        
+        return "\(self.hour):\(minute)"
     }
 }
 

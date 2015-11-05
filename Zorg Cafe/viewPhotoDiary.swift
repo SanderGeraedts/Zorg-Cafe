@@ -111,7 +111,7 @@ class viewPhotoDiary: UIViewController, UINavigationControllerDelegate, UIImageP
             let viewController = segue.destinationViewController as! viewDiaryItem
             
             //populate the view controller
-            viewController.diaryItem = photoDiary.items[indexPath.row]
+            viewController.diaryItem = photoDiary.items[photoDiary.items.count - (indexPath.row + 1)]
             
             
             //dismiss the current viewcontroller

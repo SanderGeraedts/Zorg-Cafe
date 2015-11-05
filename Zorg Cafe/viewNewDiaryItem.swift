@@ -28,9 +28,7 @@ class viewNewDiaryItem: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     @IBAction func addImage(sender: AnyObject) {
-        
         //new diary item
         let id = photoDiary.items.count
         let diaryItem = DiaryItem(id: id, image: self.image, text: txtDescription.text!, date: Date(), uploader: Person(id: 1, name: "Sander Geraedts", avatar: UIImage(),caregiver: true, phoneNumber: "06-23775102", groups: nil))
@@ -45,6 +43,5 @@ class viewNewDiaryItem: UIViewController {
         self.maincontroller.loadView()
         self.navigationController?.popToViewController(maincontroller, animated: true)
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
 }

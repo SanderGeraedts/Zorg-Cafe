@@ -10,11 +10,8 @@ import UIKit
 
 class viewVisits: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    private let reuseIdentifier = "cell"
+    private let reuseIdentifier = "visit"
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    private let tempVisit1 = Visit(startTime: DateTime(day: 9, month: 11, year: 2015, hour: 18, minute: 0), endTime: DateTime(day: 9, month: 11, year: 2015, hour: 19, minute: 0), visitors: "Ruud en Sander")
-    private let tempVisit2 = Visit(startTime: DateTime(day: 10, month: 11, year: 2015, hour: 18, minute: 0), endTime: DateTime(day: 9, month: 11, year: 2015, hour: 20, minute: 0), visitors: "Ruud")
     
     var visits = [Visit]()
     
@@ -23,12 +20,6 @@ class viewVisits: UIViewController, UICollectionViewDelegate, UICollectionViewDa
 
         let visitloader = VisitLoader()
         visits = visitloader.loadJsonData()
-        
-        visits.append(tempVisit1)
-        visits.append(tempVisit2)
-        
-        // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
 
     override func didReceiveMemoryWarning() {

@@ -44,8 +44,8 @@
 		F5E9E4CF1BCA877D0041CC25 /* burgermenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4CE1BCA877D0041CC25 /* burgermenu.png */; };
 		F5E9E4D11BCA88300041CC25 /* filtericon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4D01BCA88300041CC25 /* filtericon.png */; };
 		F5E9E4D31BCA88710041CC25 /* plusicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9E4D21BCA88710041CC25 /* plusicon.png */; };
-		F5F959DC1BEA8C78001BA08A /* cellVisits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F959DB1BEA8C78001BA08A /* cellVisits.swift */; settings = {ASSET_TAGS = (); }; };
-		F5F959DE1BEA9370001BA08A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F959DD1BEA9370001BA08A /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
+		F5F959DC1BEA8C78001BA08A /* cellVisits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F959DB1BEA8C78001BA08A /* cellVisits.swift */; };
+		F5F959DE1BEA9370001BA08A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F959DD1BEA9370001BA08A /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -376,6 +376,7 @@
 				TargetAttributes = {
 					F51EC8BA1BC1AB7F00BD22A0 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 2P5C3MBZR8;
 					};
 					F51EC8D11BC1AB7F00BD22A0 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -605,11 +606,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Zorg Cafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepanda.Zorg-Cafe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -618,11 +621,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Zorg Cafe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepanda.Zorg-Cafe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
